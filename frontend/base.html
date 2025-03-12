@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bank Account Dapp</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Bank Account Dapp</h1>
+	<main>
+		<section id="createAccountCard">
+			<h2>Create Account</h2>
+			<input type="text" id="owners" placeholder="Comma separated owner addresses">
+			<button id="create">Create Account</button>
+		</section>
+
+		<section id="viewDetailsCard">
+			<h2>View Details</h2>
+			<button id="view">Accounts</button>
+			<button id="viewWithdrawals">Withdrawals</button>
+			<div id="accounts"></div>
+		</section>
+
+		<section id="depositCard">
+			<h2>Deposit Funds</h2>
+			<input type="text" id="depositAccountId" placeholder="Account ID">
+			<input type="text" id="depositAmount" placeholder="Amount in Ether">
+			<button id="deposit">Deposit</button>
+		</section>
+
+		<section id="withdrawRequestCard">
+			<h2>Request Withdrawal</h2>
+			<input type="text" id="withdrawRequestAccountId" placeholder="Account ID">
+			<input type="text" id="withdrawRequestAmount" placeholder="Amount in Ether">
+			<button id="withdrawRequest">Request Withdrawal</button>
+		</section>
+
+		<section id="approveWithdrawCard">
+			<h2>Approve Withdrawal</h2>
+			<input type="text" id="approveAccountId" placeholder="Account ID">
+			<input type="text" id="approveWithdrawId" placeholder="Withdrawal ID">
+			<button id="approveWithdraw">Approve Withdrawal</button>
+		</section>
+
+		<section id="withdrawCard">
+			<h2>Withdraw Funds</h2>
+			<input type="text" id="withdrawAccountId" placeholder="Account ID">
+			<input type="text" id="withdrawWithdrawId" placeholder="Withdrawal ID">
+			<button id="withdraw">Withdraw</button>
+		</section>
+
+		<section id="eventLogCard"">
+			<h2>Event Log</h2>
+			<div id="events"></div>
+		</section>
+	</main>
+
+	<script type="module" src="ui.js"></script>
+</body>
+</html>
